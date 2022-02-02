@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5230657627AA882100B5D3D2 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230657527AA882100B5D3D2 /* CalculatorBrain.swift */; };
+		5230657827AA8A8500B5D3D2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230657727AA8A8500B5D3D2 /* ResultViewController.swift */; };
 		528536CD27A32E9800B07BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528536CC27A32E9800B07BB4 /* AppDelegate.swift */; };
 		528536CF27A32E9800B07BB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528536CE27A32E9800B07BB4 /* SceneDelegate.swift */; };
-		528536D127A32E9800B07BB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528536D027A32E9800B07BB4 /* ViewController.swift */; };
+		528536D127A32E9800B07BB4 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528536D027A32E9800B07BB4 /* CalculateViewController.swift */; };
 		528536D427A32E9800B07BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528536D227A32E9800B07BB4 /* Main.storyboard */; };
 		528536D627A32E9900B07BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528536D527A32E9900B07BB4 /* Assets.xcassets */; };
 		528536D927A32E9900B07BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528536D727A32E9900B07BB4 /* LaunchScreen.storyboard */; };
+		52921D0127A9F5F000199F7F /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52921D0027A9F5F000199F7F /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5230657527AA882100B5D3D2 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		5230657727AA8A8500B5D3D2 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		528536C927A32E9800B07BB4 /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		528536CC27A32E9800B07BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528536CE27A32E9800B07BB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		528536D027A32E9800B07BB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		528536D027A32E9800B07BB4 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		528536D327A32E9800B07BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		528536D527A32E9900B07BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528536D827A32E9900B07BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528536DA27A32E9900B07BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52921D0027A9F5F000199F7F /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				528536CC27A32E9800B07BB4 /* AppDelegate.swift */,
 				528536CE27A32E9800B07BB4 /* SceneDelegate.swift */,
-				528536D027A32E9800B07BB4 /* ViewController.swift */,
-				528536D227A32E9800B07BB4 /* Main.storyboard */,
+				528536E227A32EA900B07BB4 /* Modell */,
+				528536E127A32EA600B07BB4 /* View */,
+				528536E027A32EA300B07BB4 /* Controller */,
 				528536D527A32E9900B07BB4 /* Assets.xcassets */,
-				528536D727A32E9900B07BB4 /* LaunchScreen.storyboard */,
 				528536DA27A32E9900B07BB4 /* Info.plist */,
 			);
 			path = "BMI Calculator";
+			sourceTree = "<group>";
+		};
+		528536E027A32EA300B07BB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				528536D027A32E9800B07BB4 /* CalculateViewController.swift */,
+				5230657727AA8A8500B5D3D2 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		528536E127A32EA600B07BB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				528536D227A32E9800B07BB4 /* Main.storyboard */,
+				528536D727A32E9900B07BB4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		528536E227A32EA900B07BB4 /* Modell */ = {
+			isa = PBXGroup;
+			children = (
+				52921D0027A9F5F000199F7F /* BMI.swift */,
+				5230657527AA882100B5D3D2 /* CalculatorBrain.swift */,
+			);
+			path = Modell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528536D127A32E9800B07BB4 /* ViewController.swift in Sources */,
+				52921D0127A9F5F000199F7F /* BMI.swift in Sources */,
+				528536D127A32E9800B07BB4 /* CalculateViewController.swift in Sources */,
 				528536CD27A32E9800B07BB4 /* AppDelegate.swift in Sources */,
+				5230657627AA882100B5D3D2 /* CalculatorBrain.swift in Sources */,
 				528536CF27A32E9800B07BB4 /* SceneDelegate.swift in Sources */,
+				5230657827AA8A8500B5D3D2 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
